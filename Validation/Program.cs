@@ -6,9 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOptions<DatabaseOptionModel>()
     .BindConfiguration("Database")
-    .ValidateDataAnnotations()
+    //.ValidateDataAnnotations()
     .Validate(config =>
     {
+        // multiple checks
+
         return !string.IsNullOrEmpty(config.Name);
     }, "DatabaseName cannot be empty")
     .ValidateOnStart();

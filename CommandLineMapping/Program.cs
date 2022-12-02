@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Spectre.Console;
 
 var mappings = new Dictionary<string, string>
 {

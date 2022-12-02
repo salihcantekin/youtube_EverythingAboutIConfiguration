@@ -19,14 +19,18 @@ app.UseHttpsRedirection();
 
 app.MapGet("/Sql", ([FromServices] IOptionsSnapshot<DatabaseOptionModel> options) =>
 {
-    var data = options.Get("SqlDB");
+    var data = options.Get(name: "SqlDB");
+
     return $"DbName: {data.Name}, UserName: {data.UserName}";
-}).WithDisplayName("Get");
+})
+.WithDisplayName("Get");
 
 app.MapGet("/Oracle", ([FromServices] IOptionsSnapshot<DatabaseOptionModel> options) =>
 {
-    var data = options.Get("OracleDB");
+    var data = options.Get(name: "OracleDB");
+
     return $"DbName: {data.Name}, UserName: {data.UserName}";
-}).WithDisplayName("Get");
+})
+.WithDisplayName("Get");
 
 app.Run();
