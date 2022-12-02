@@ -9,8 +9,8 @@ Environment.SetEnvironmentVariable("TestEnv", "Production");
 
 IConfigurationRoot configuration = new ConfigurationBuilder()
     .AddJsonFile("appSettings.json")
-    .AddEnvironmentVariables(prefix: "TechBuddyCongif_")
     //.AddEnvironmentVariables()
+    .AddEnvironmentVariables(prefix: "TechBuddyCongif_")
     .Build();
 
 var dbName = configuration["DatabaseName"];
