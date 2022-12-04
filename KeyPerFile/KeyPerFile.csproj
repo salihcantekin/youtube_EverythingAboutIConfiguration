@@ -19,7 +19,7 @@
 	  <None Update="appSettings.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
-	  <None Update="Files\Database__Name">
+	  <None Update="Files\Database__Name1">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
 	  <None Update="Files\Database__UserName">

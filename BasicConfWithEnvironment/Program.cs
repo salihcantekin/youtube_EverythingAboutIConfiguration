@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 
 // bash
-// environment=qa dotnet run
+// TestEnv=Production dotnet run
 
-Environment.SetEnvironmentVariable("TestEnv", "Production");
+Environment.SetEnvironmentVariable("TechBuddyCongif_TestEnv", "Production");
 
 
 

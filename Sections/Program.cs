@@ -7,7 +7,7 @@ IConfigurationRoot configuration = new ConfigurationBuilder()
     .AddCommandLine(args)
     .Build();
 
-
+// SECTION_NAME:CONFIG_KEY
 // Terminal
 // dotnet run --Database:UserName="admin"
 

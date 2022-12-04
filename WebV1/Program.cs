@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var section = builder.Configuration.GetSection("SqlDatabase");
+var section = builder.Configuration.GetSection("Database");
 builder.Services.Configure<DatabaseOptionModel>(section);
 
 var app = builder.Build();
